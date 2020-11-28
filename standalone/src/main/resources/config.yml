@@ -12,8 +12,9 @@ remote:
   # 389 - 1.14.0
   # 390 - 1.14.60
   # 407 - 1.16.0/1
-  # 408 - 1.16.2
-  protocol-version: 408
+  # 408 - 1.16.20
+  # 419 - 1.16.100
+  protocol-version: 419
 
 # If debug messages should be sent through console
 debug-mode: false
