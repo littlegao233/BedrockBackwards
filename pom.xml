@@ -17,7 +17,7 @@
     <repositories>
         <repository>
             <id>nukkitx-release-repo</id>
-            <url>https://repo.nukkitx.com/maven-releases/</url>
+            <url>https://repo.nukkitx.com/maven-snapshots/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -41,7 +41,7 @@
         <repository>
             <id>releases</id>
             <name>nukkitx-releases</name>
-            <url>https://repo.nukkitx.com/maven-releases</url>
+            <url>https://repo.nukkitx.com/maven-snapshots</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
@@ -57,6 +57,7 @@
             <version>1.18.4</version>
             <scope>provided</scope>
         </dependency>
+
     </dependencies>
 
 
