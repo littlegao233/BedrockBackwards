@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
+import com.github.doctormacc.common.ConnectionServerEventHandler;
 import lombok.Getter;
 import org.apache.commons.io.FileUtils;
 
@@ -38,7 +39,8 @@ public class BedrockBackwardsStandalone {
             logger.info("Cannot load config file - exiting...");
             System.exit(1);
         }
-
+        if(config.motd!=null){    ConnectionServerEventHandler.MotdStr=config.motd;}
+        logger.info("Motd:"+ ConnectionServerEventHandler.MotdStr);
         BedrockBackwards.start(logger, config);
         logger.start();
     }

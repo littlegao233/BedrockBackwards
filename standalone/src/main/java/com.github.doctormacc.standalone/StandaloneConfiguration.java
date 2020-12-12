@@ -10,6 +10,10 @@ import lombok.Getter;
 public class StandaloneConfiguration implements Configuration {
 
     private ListenConfiguration listen;
+
+    public StandaloneConfiguration() {
+    }
+
     @Getter
     public static class ListenConfiguration implements Configuration.ListenConfiguration {
         private String address;
@@ -31,4 +35,7 @@ public class StandaloneConfiguration implements Configuration {
     // Currently unused, but included for future-proofing
     @JsonProperty("config-version")
     private int configVersion;
+
+    @JsonProperty("motd")
+    public String motd;
 }
