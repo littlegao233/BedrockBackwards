@@ -19,5 +19,6 @@ remote:
 # If debug messages should be sent through console
 debug-mode: false
 
+motd: xsba test
 # DO NOT TOUCH!
 config-version: 1
